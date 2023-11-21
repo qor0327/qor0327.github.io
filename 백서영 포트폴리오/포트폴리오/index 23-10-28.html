@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .navbar-brand img {
+            width: 150px;
+        }
+
+        .bg-transparent {
+            background-color: rgba(0, 0, 0, 0) !important
+        }
+
+        .bg-black {
+            background-color: black;
+        }
+
+        .btn-outline-gold {
+            color: rgb(211, 201, 136);
+            border: 1px solid rgb(211, 201, 136);
+        }
+
+        .btn-outline-gold:hover {
+            background-color: rgb(211, 201, 136);
+            color: black;
+        }
+        .thumbnail{
+            position: relative;
+        }
+        .thumbnail img {
+            width: 100%;
+        }
+        .thumbnail .caption {
+            color: white;
+        }
+        .imgbox1{
+            width: 100%;
+            height: 400px;
+            background:url("img/anime1.jpg");
+            background-size: cover;
+        }
+        .imgbox1::after{
+            transition: background-color 0.5s;
+            background-color: rgba(41, 41, 41, 0);
+            width: 100%;
+            height: 400px;
+            content: "";
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .imgbox1:hover::after{
+            width: 100%;
+            height: 400px;
+            content: "경이적인 신체능력을 가진 소년 이타도리 유지는 아주 평범한 고등학생이었지만, 어느 날 '저주'에 습격당한 친구를 구하기 위해 특급 주물 '양면 스쿠나'의 손가락을 먹고 영혼에 저주가 깃들게 되는데......";
+            background-color: rgba(41, 41, 41, 0.8);
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        .imgbox2{
+            width: 100%;
+            height: 400px;
+            background:url("img/animemovie1.jpg");
+            background-size: cover;
+        }
+        .imgbox2::after{
+            transition: background-color 0.5s;
+            background-color: rgba(41, 41, 41, 0);
+            width: 100%;
+            height: 400px;
+            content: "";
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .imgbox2:hover::after{
+            width: 100%;
+            height: 400px;
+            content: "";
+            background-color: rgba(41, 41, 41, 0.8);
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        .imgbox3{
+            width: 100%;
+            height: 400px;
+            background:url("img/anime2.jpg");
+            background-size: cover;
+        }
+        .imgbox3::after{
+            transition: background-color 0.5s;
+            background-color: rgba(41, 41, 41, 0);
+            width: 100%;
+            height: 400px;
+            content: "";
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .imgbox3:hover::after{
+            width: 100%;
+            height: 400px;
+            content: "";
+            background-color: rgba(41, 41, 41, 0.8);
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        .imgbox4{
+            width: 100%;
+            height: 400px;
+            background:url("img/anime2-1.jpg");
+            background-size: cover;
+        }
+        .imgbox4::after{
+            transition: background-color 0.5s;
+            background-color: rgba(41, 41, 41, 0);
+            width: 100%;
+            height: 400px;
+            content: "";
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .imgbox4:hover::after{
+            width: 100%;
+            height: 400px;
+            content: "";
+            background-color: rgba(41, 41, 41, 0.8);
+            display: block;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-black">
+        <div class="row">
+            <div class="col px-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col">
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <a class="navbar-brand mx-auto" href="http://127.0.0.1:5500/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/index%2023-10-28.html"><img src="img/logo1.png" alt=""></a>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                                <button class="btn btn-outline-gold my-2 my-sm-0" type="submit">검색</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hL_rA7FbCLU?si=QqhPtWgU2biGGSFm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10vh; padding-bottom: 8vh;"></div>
+        <div class="row" style="display: flex; justify-content: center; align-items: center; margin: 2vh 0;">
+            <img src="img/logo1.png" alt="" style="height: 4em;"><h1 style="color: #fff;">&nbsp;보러가기</h1>
+        </div>
+        <div class="row">
+            <div class="container-fluid bg-lightgray">
+                <!--썸네일 컨텐츠-->
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-6 col-lg-2">
+                        <div class="thumbnail">
+                            <div class="imgbox1">
+                                
+                            </div>
+                            <div class="caption">
+                                <br>
+                                <h5>주술회전 1기</h5>
+                                <h6>방영일: <br>
+                                    part1: 2020.10.03 ~ 2020.12.26<br>
+                                    part2: 2021.01.16 ~ 2021.03.27</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <div class="thumbnail">
+                            <div class="imgbox2">
+                                
+                            </div>
+                            <div class="caption">
+                                <br>
+                                <h5>주술회전 극장판:0(ZERO)</h5>
+                                <h6>개봉일: 2022.2.17</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <div class="thumbnail">
+                            <div class="imgbox3">
+                                
+                            </div>
+                            <div class="caption">
+                                <br>
+                                <h5>주술회전 2기:회옥 · 옥절</h5>
+                                <h6>방영일: 2023.07.06 ~ 2023.08.03</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <div class="thumbnail">
+                            <div class="imgbox4">
+                                
+                            </div>
+                            <div class="caption">
+                                <br>
+                                <h5>주술회전 2기:시부야사변</h5>
+                                <h6>방영중</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
